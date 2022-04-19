@@ -3,7 +3,6 @@ import Figure from './components/Figure';
 import { Header } from './components/Header';
 import { Word } from './components/Word';
 import { WrongLetter } from './components/WrongLetter';
-import { useState } from 'react';
 
 const words = ['application', 'programming', 'interface', 'wizard'];
 
@@ -20,7 +19,7 @@ function App() {
       <div className="game-container">
         <Figure />
         <WrongLetter />
-        <Word />
+        <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
     </div>
   );
