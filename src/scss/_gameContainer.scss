@@ -52,3 +52,14 @@
     width: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .game-container .wrong-letters-container {
+    position: relative;
+    top: -100%;
+    right: 66px;
+    display: block;
+    flex-direction: column;
+    text-align: right;
+  }
+}

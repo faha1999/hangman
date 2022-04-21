@@ -3,7 +3,7 @@ import React from 'react';
 export const WrongLetters = ({ wrongLetters }) => {
   return (
     <div className="wrong-letters-container">
-      <div>
+      <div className="wrong">
         {wrongLetters.length > 0 && <p>Wrong</p>}
         {wrongLetters
           .map((letter, i) => <span key={i}>{letter}</span>)
